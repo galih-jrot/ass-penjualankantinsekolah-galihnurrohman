@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.dashbord')
 
 @section('content')
 <div class="container">
@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    {{ __('Selamat datang Galih') }}
                 </div>
             </div>
         </div>

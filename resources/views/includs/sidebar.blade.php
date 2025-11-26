@@ -1,4 +1,4 @@
-<aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+<aside id="layout-menu" class="layout-menu menu-vertical menu" style="background: linear-gradient(135deg, #f6f5f5 0%, #5f6d5f 100%);">
           <div class="app-brand demo">
             <a href="index.html" class="app-brand-link">
               <span class="app-brand-logo demo">
@@ -67,68 +67,36 @@
           <div class="menu-inner-shadow"></div>
 
           <ul class="menu-inner py-1">
-            <!-- Dashboard -->
-            <li class="menu-item {{ request()->routeIs('home') ? 'active' : '' }}">
-              <a href="{{ route('home') }}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-home-circle"></i>
-                <div data-i18n="Analytics">Dashboard</div>
-              </a>
-            </li>
+<!-- Dashboard -->
+<li class="menu-item {{ request()->routeIs('home') ? 'active' : '' }}" style="{{ request()->routeIs('home') ? 'background-color: #0d6efd; color: white;' : '' }}">
+  <a href="{{ route('home') }}" class="menu-link" style="{{ request()->routeIs('home') ? 'color: white;' : '' }}">
+    <i class="menu-icon tf-icons bx bx-home-circle" style="{{ request()->routeIs('home') ? 'color: white;' : '' }}"></i>
+    <div data-i18n="Analytics">Dashboard</div>
+  </a>
+</li>
 
 <!-- Kategori -->
-            <li class="menu-item {{ request()->routeIs('kategori.*') ? 'active' : '' }}">
-              <a href="{{ route('kategori.index') }}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-category"></i>
-                <div data-i18n="Kategori">Kategori</div>
-              </a>
-            </li>
-            <!-- Produk -->
-            <li class="menu-item {{ request()->routeIs('produk.*') ? 'active' : '' }}">
-              <a href="{{ route('produk.index') }}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-box"></i>
-                <div data-i18n="Produk">Produk</div>
-              </a>
-            </li>
-
+<li class="menu-item {{ request()->routeIs('kategori.*') ? 'active' : '' }}" style="{{ request()->routeIs('kategori.*') ? 'background-color: #0d6efd; color: white;' : '' }}">
+  <a href="{{ route('kategori.index') }}" class="menu-link" style="{{ request()->routeIs('kategori.*') ? 'color: white;' : '' }}">
+    <i class="menu-icon tf-icons bx bx-category" style="{{ request()->routeIs('kategori.*') ? 'color: white;' : '' }}"></i>
+    <div data-i18n="Kategori">Kategori</div>
+  </a>
+</li>
+<!-- Produk -->
+<li class="menu-item {{ request()->routeIs('produk.*') ? 'active' : '' }}" style="{{ request()->routeIs('produk.*') ? 'background-color: #0d6efd; color: white;' : '' }}">
+  <a href="{{ route('produk.index') }}" class="menu-link" style="{{ request()->routeIs('produk.*') ? 'color: white;' : '' }}">
+    <i class="menu-icon tf-icons bx bx-box" style="{{ request()->routeIs('produk.*') ? 'color: white;' : '' }}"></i>
+    <div data-i18n="Produk">Produk</div>
+  </a>
+</li>
 
 <!-- Transaksi -->
-            <li class="menu-item {{ request()->routeIs('transaksi.*') ? 'active' : '' }}">
-              <a href="{{ route('transaksi.index') }}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-receipt"></i>
-                <div data-i18n="Transaksi">Transaksi</div>
-              </a>
-            </li>
-
-          
-
-              <ul class="menu-sub">
-                <li class="menu-item">
-                  <a href="layouts-without-menu.html" class="menu-link">
-                    <div data-i18n="Without menu">Without menu</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="layouts-without-navbar.html" class="menu-link">
-                    <div data-i18n="Without navbar">Without navbar</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="layouts-container.html" class="menu-link">
-                    <div data-i18n="Container">Container</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="layouts-fluid.html" class="menu-link">
-                    <div data-i18n="Fluid">Fluid</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="layouts-blank.html" class="menu-link">
-                    <div data-i18n="Blank">Blank</div>
-                  </a>
-                </li>
-              </ul>
-            </li>
+<li class="menu-item {{ request()->routeIs('transaksi.*') ? 'active' : '' }}" style="{{ request()->routeIs('transaksi.*') ? 'background-color: #0d6efd; color: white;' : '' }}">
+  <a href="{{ route('transaksi.index') }}" class="menu-link" style="{{ request()->routeIs('transaksi.*') ? 'color: white;' : '' }}">
+    <i class="menu-icon tf-icons bx bx-receipt" style="{{ request()->routeIs('transaksi.*') ? 'color: white;' : '' }}"></i>
+    <div data-i18n="Transaksi">Transaksi</div>
+  </a>
+</li>
 
            
             

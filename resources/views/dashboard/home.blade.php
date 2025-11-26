@@ -5,7 +5,7 @@
 @section('content')
 <div class="container">
     <div class="alert alert-success">
-        <h3>Selamat Datang di Dashboard</h3>
+        <h4>Selamat Datang di Dashboard</h4>
         <p>Ini adalah halaman utama dashboard.</p>
     </div>
 </div>

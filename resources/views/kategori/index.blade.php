@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-header">
                     <div class="d-flex justify-content-between align-items-center">
-                        <h4>Kategori Produk</h4>
+                        <h5>Kategori Produk</h5>
                         <a href="{{ route('kategori.create') }}" class="btn btn-primary">Tambah Kategori</a>
                     </div>
                 </div>

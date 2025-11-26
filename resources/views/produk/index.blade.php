@@ -6,12 +6,12 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <div>
-                        {{ __('produk') }}
+                    <div class="card-header">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5>Kategori Produk</h5>
+                        <a href="{{ route('produk.create') }}" class="btn btn-primary">Tambah Kategori</a>
                     </div>
-                    <div class="float-end">
-                        <a href="{{ route('produk.create') }}" class="btn btn-sm btn-outline-primary">Tambah Data</a>
-                    </div>
+                </div>
                 </div>
 
                 <div class="card-body">
@@ -52,9 +52,9 @@
                                             @csrf
                                             @method('DELETE')
                                         <a href="{{ route('produk.show', $data->id) }}"
-                                            class="btn btn-info btn-sm">Show</a> |
+                                            class="btn btn-info btn-sm">Show</a> 
                                         <a href="{{ route('produk.edit', $data->id) }}"
-                                            class="btn btn-warning btn-sm">Edit</a> |
+                                            class="btn btn-warning btn-sm">Edit</a> 
                                         <button type="submit" onclick="return confirm('Are You Sure ?');"
                                             class="btn btn-danger btn-sm">Delete</button>
                                     </form>
